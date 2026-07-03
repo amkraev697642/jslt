@@ -22,9 +22,11 @@ right there.
 
 The playground page also offers **Run in JS**, which evaluates transforms
 entirely in the browser using
-[jslt-js](https://github.com/amkraev697642/jslt-js). This works without
-building or running the Java server — open the HTML via the server above, or
-host `lambda.html` on any static file server.
+[jslt-js](https://github.com/amkraev697642/jslt-js) loaded from
+[npm](https://www.npmjs.com/package/jslt-js) via unpkg (`@latest`, so each page
+load picks up the current published release). This works without building or
+running the Java server — open the HTML via the server above, or host
+`lambda.html` on any static file server (network required for unpkg).
 
 The **Run (Java server)** button still uses the original Java JSLT engine via
 POST (as on [garshol.priv.no/jslt-demo](http://www.garshol.priv.no/jslt-demo)).
